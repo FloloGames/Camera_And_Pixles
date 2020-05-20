@@ -26,12 +26,10 @@ void draw() {
       float r1 = red(currentColor);
       float g1 = green(currentColor);
       float b1 = blue(currentColor);
-
       color prevColor = color(prev.pixels[loc]);
       float r2 = red(prevColor);
       float g2 = green(prevColor);
       float b2 = blue(prevColor);
-
       float dist = dist(r1, g1, b1, r2, g2, b2);
       if (dist < gen) {
         pixels[loc] = stand;
